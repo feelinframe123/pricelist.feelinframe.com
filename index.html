@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FEEL.INFRAME - Graduation Photography</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/lucide/0.263.1/lucide.css" rel="stylesheet">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/lucide/0.263.1/lucide.min.js"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
 </head>
 <body>
     <div class="min-h-screen bg-gradient">
@@ -35,21 +35,21 @@
             <div class="features-grid">
                 <div class="feature-card">
                     <div class="feature-icon">
-                        <i data-lucide="sparkles"></i>
+                        <i data-lucide="sparkles" class="icon-large"></i>
                     </div>
                     <h3>Premium Results</h3>
                     <p>Color grading & editing profesional</p>
                 </div>
                 <div class="feature-card">
                     <div class="feature-icon">
-                        <i data-lucide="map-pin"></i>
+                        <i data-lucide="map-pin" class="icon-large"></i>
                     </div>
                     <h3>Best Locations</h3>
                     <p>Spot foto aesthetic & instagramable</p>
                 </div>
                 <div class="feature-card">
                     <div class="feature-icon">
-                        <i data-lucide="file-image"></i>
+                        <i data-lucide="camera" class="icon-large"></i>
                     </div>
                     <h3>Creative Freedom</h3>
                     <p>Express your style, we'll guide you</p>
@@ -61,7 +61,7 @@
         <div class="promo-section">
             <div class="promo-card">
                 <div class="promo-content">
-                    <i data-lucide="users" class="promo-icon"></i>
+                    <i data-lucide="users" class="icon-large"></i>
                     <div>
                         <h2>Special Offer! ✨</h2>
                         <p>Ajak temanmu dan dapatkan potongan <span>Rp 50.000</span></p>
@@ -74,74 +74,155 @@
         <div class="pricing-section">
             <!-- Basic Package -->
             <div class="pricing-card">
-                <div class="pricing-icon">
-                    <i data-lucide="camera"></i>
+                <div class="card-content">
+                    <div class="pricing-icon">
+                        <i data-lucide="camera" class="icon-large"></i>
+                    </div>
+                    <h3>BASIC</h3>
+                    <p class="package-description">Perfect for Personal Graduation Story ✨</p>
+                    <div class="price">Rp 350K</div>
+                    <div class="duration">
+                        <i data-lucide="clock" class="icon-small"></i>
+                        1 Jam
+                    </div>
+                    <ul class="features-list">
+                        <li>
+                            <i data-lucide="check" class="icon-small"></i>
+                            <span>Unlimited shots selama sesi berlangsung</span>
+                        </li>
+                        <li>
+                            <i data-lucide="check" class="icon-small"></i>
+                            <span>All files di Google Drive (akses 8 hari)</span>
+                        </li>
+                        <li>
+                            <i data-lucide="check" class="icon-small"></i>
+                            <span>Professional lightroom color grading</span>
+                        </li>
+                        <li>
+                            <i data-lucide="check" class="icon-small"></i>
+                            <span>Free foto dengan keluarga/sahabat</span>
+                        </li>
+                        <li>
+                            <i data-lucide="check" class="icon-small"></i>
+                            <span>Guide pose & creative direction</span>
+                        </li>
+                        <li>
+                            <i data-lucide="check" class="icon-small"></i>
+                            <span>Free konsultasi konsep foto</span>
+                        </li>
+                    </ul>
+                    <button class="book-button" data-package="basic">
+                        <div class="button-content">
+                            <i data-lucide="send" class="icon-small"></i>
+                            Book Now
+                        </div>
+                    </button>
                 </div>
-                <h3>BASIC</h3>
-                <p class="package-description">Perfect for Personal Graduation Story ✨</p>
-                <div class="price">Rp 350K</div>
-                <div class="duration">
-                    <i data-lucide="clock"></i>
-                    1 Jam
-                </div>
-                <ul class="features-list">
-                    <li><i data-lucide="check"></i>Unlimited shots selama sesi berlangsung</li>
-                    <li><i data-lucide="check"></i>All files di Google Drive (akses 8 hari)</li>
-                    <li><i data-lucide="check"></i>Professional lightroom color grading</li>
-                    <li><i data-lucide="check"></i>Free foto dengan keluarga/sahabat</li>
-                    <li><i data-lucide="check"></i>Guide pose & creative direction</li>
-                    <li><i data-lucide="check"></i>Free konsultasi konsep foto</li>
-                </ul>
-                <button class="book-button" data-package="basic">Book Now</button>
             </div>
 
             <!-- Signature Package -->
-            <div class="pricing-card popular">
-                <div class="popular-tag">MOST POPULAR</div>
-                <div class="pricing-icon">
-                    <i data-lucide="star"></i>
+            <div class="pricing-card">
+                <div class="card-content">
+                    <div class="popular-tag">Most Popular</div>
+                    <div class="pricing-icon">
+                        <i data-lucide="star" class="icon-large"></i>
+                    </div>
+                    <h3>SIGNATURE</h3>
+                    <p class="package-description">Extra Time & Premium Experience 💫</p>
+                    <div class="price">Rp 650K</div>
+                    <div class="duration">
+                        <i data-lucide="clock" class="icon-small"></i>
+                        2 Jam
+                    </div>
+                    <ul class="features-list">
+                        <li>
+                            <i data-lucide="check" class="icon-small"></i>
+                            <span>Unlimited shots di 2 lokasi aesthetic</span>
+                        </li>
+                        <li>
+                            <i data-lucide="check" class="icon-small"></i>
+                            <span>Free transportasi antar lokasi</span>
+                        </li>
+                        <li>
+                            <i data-lucide="check" class="icon-small"></i>
+                            <span>All files di Google Drive (akses 10 hari)</span>
+                        </li>
+                        <li>
+                            <i data-lucide="check" class="icon-small"></i>
+                            <span>Premium lightroom color grading</span>
+                        </li>
+                        <li>
+                            <i data-lucide="check" class="icon-small"></i>
+                            <span>Free foto dengan keluarga/sahabat</span>
+                        </li>
+                        <li>
+                            <i data-lucide="check" class="icon-small"></i>
+                            <span>Guide pose & creative direction</span>
+                        </li>
+                        <li>
+                            <i data-lucide="check" class="icon-small"></i>
+                            <span>Free konsultasi detail konsep</span>
+                        </li>
+                    </ul>
+                    <button class="book-button" data-package="signature">
+                        <div class="button-content">
+                            <i data-lucide="send" class="icon-small"></i>
+                            Book Now
+                        </div>
+                    </button>
                 </div>
-                <h3>SIGNATURE</h3>
-                <p class="package-description">Extra Time & Premium Experience 💫</p>
-                <div class="price">Rp 650K</div>
-                <div class="duration">
-                    <i data-lucide="clock"></i>
-                    2 Jam
-                </div>
-                <ul class="features-list">
-                    <li><i data-lucide="check"></i>Unlimited shots di 2 lokasi aesthetic</li>
-                    <li><i data-lucide="check"></i>Free transportasi antar lokasi</li>
-                    <li><i data-lucide="check"></i>All files di Google Drive (akses 10 hari)</li>
-                    <li><i data-lucide="check"></i>Premium lightroom color grading</li>
-                    <li><i data-lucide="check"></i>Free foto dengan keluarga/sahabat</li>
-                    <li><i data-lucide="check"></i>Guide pose & creative direction</li>
-                    <li><i data-lucide="check"></i>Free konsultasi detail konsep</li>
-                </ul>
-                <button class="book-button" data-package="signature">Book Now</button>
             </div>
 
             <!-- Duo Package -->
             <div class="pricing-card">
-                <div class="pricing-icon">
-                    <i data-lucide="users"></i>
+                <div class="card-content">
+                    <div class="pricing-icon">
+                        <i data-lucide="users" class="icon-large"></i>
+                    </div>
+                    <h3>DUO</h3>
+                    <p class="package-description">Share Joy & Split Bill with Bestie 👯</p>
+                    <div class="price">Rp 450K</div>
+                    <div class="duration">
+                        <i data-lucide="clock" class="icon-small"></i>
+                        1 Jam
+                    </div>
+                    <ul class="features-list">
+                        <li>
+                            <i data-lucide="check" class="icon-small"></i>
+                            <span>Untuk 2 orang wisudawan</span>
+                        </li>
+                        <li>
+                            <i data-lucide="check" class="icon-small"></i>
+                            <span>Unlimited shots selama sesi</span>
+                        </li>
+                        <li>
+                            <i data-lucide="check" class="icon-small"></i>
+                            <span>Individual shots included</span>
+                        </li>
+                        <li>
+                            <i data-lucide="check" class="icon-small"></i>
+                            <span>All files di Google Drive (akses 8 hari)</span>
+                        </li>
+                        <li>
+                            <i data-lucide="check" class="icon-small"></i>
+                            <span>Professional lightroom color grading</span>
+                        </li>
+                        <li>
+                            <i data-lucide="check" class="icon-small"></i>
+                            <span>Guide pose duo & single</span>
+                        </li>
+                        <li>
+                            <i data-lucide="check" class="icon-small"></i>
+                            <span>Free konsultasi konsep foto</span>
+                        </li>
+                    </ul>
+                    <button class="book-button" data-package="duo">
+                        <div class="button-content">
+                            <i data-lucide="send" class="icon-small"></i>
+                            Book Now
+                        </div>
+                    </button>
                 </div>
-                <h3>DUO</h3>
-                <p class="package-description">Share Joy & Split Bill with Bestie 👯</p>
-                <div class="price">Rp 450K</div>
-                <div class="duration">
-                    <i data-lucide="clock"></i>
-                    1 Jam
-                </div>
-                <ul class="features-list">
-                    <li><i data-lucide="check"></i>Untuk 2 orang wisudawan</li>
-                    <li><i data-lucide="check"></i>Unlimited shots selama sesi</li>
-                    <li><i data-lucide="check"></i>Individual shots included</li>
-                    <li><i data-lucide="check"></i>All files di Google Drive (akses 8 hari)</li>
-                    <li><i data-lucide="check"></i>Professional lightroom color grading</li>
-                    <li><i data-lucide="check"></i>Guide pose duo & single</li>
-                    <li><i data-lucide="check"></i>Free konsultasi konsep foto</li>
-                </ul>
-                <button class="book-button" data-package="duo">Book Now</button>
             </div>
         </div>
 
@@ -150,13 +231,11 @@
             <h2>Get in Touch</h2>
             <div class="social-links">
                 <a href="https://instagram.com/feel.inframe" class="social-link">
-                    <i data-lucide="instagram"></i>
+                    <i data-lucide="instagram" class="icon-large"></i>
                     @feel.inframe
                 </a>
                 <a href="https://wa.me/6282345695620" class="social-link">
-                    <svg class="whatsapp-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                        <path fill="currentColor" d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347M12.067 19.794a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
-                    </svg>
+                    <i data-lucide="message-circle" class="icon-large"></i>
                     +62 823-4569-5620
                 </a>
             </div>
